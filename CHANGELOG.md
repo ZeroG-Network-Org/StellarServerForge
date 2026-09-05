@@ -54,3 +54,5 @@ also used as the GitHub Release notes for each CI build — see `docs/wiki/Build
   rounded, accent-on-focus) replace the look-and-feel's stock radio/text-field chrome in the setup
   wizard. The RAM step's number input no longer uses a `JSpinner` — it clashed visually with the
   rest of the themed UI — replaced with a `−`/`+` button pair around a `StellarTextField`.
+- The Mods and ZeroG Network mods tabs' filter boxes now use `StellarTextField` too, so both
+  match the wizard's rounded, accent-on-focus input styling instead of the old flat/square field.

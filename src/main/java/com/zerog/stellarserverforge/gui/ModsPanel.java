@@ -39,7 +39,7 @@ public class ModsPanel extends JPanel {
     private final StellarButton moveButton = new StellarButton("Move selected to CLIENTMODS", StellarButton.Variant.SECONDARY);
     private final StellarButton viewToggleButton = new StellarButton("View CLIENTMODS", StellarButton.Variant.SECONDARY);
     private final StellarButton openFolderButton = new StellarButton("Open folder", StellarButton.Variant.SECONDARY);
-    private final JTextField filterField = new JTextField(20);
+    private final JTextField filterField = new com.zerog.stellarserverforge.gui.theme.StellarTextField(20);
     private final List<ModEntry> masterEntries = new ArrayList<>();
     private final java.util.Set<String> selectedFileNames = new java.util.LinkedHashSet<>();
     private boolean viewingClientMods;
@@ -106,13 +106,6 @@ public class ModsPanel extends JPanel {
         filterRow.setOpaque(false);
         filterRow.setAlignmentX(Component.LEFT_ALIGNMENT);
         filterRow.add(StellarLabels.body("Filter:"), BorderLayout.WEST);
-        filterField.setBackground(StellarTheme.FIELD_BG);
-        filterField.setForeground(StellarTheme.TEXT_PRIMARY);
-        filterField.setCaretColor(StellarTheme.ACCENT);
-        filterField.setFont(StellarTheme.FONT_BODY);
-        filterField.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createLineBorder(StellarTheme.NEUTRAL_800),
-                BorderFactory.createEmptyBorder(4, 8, 4, 8)));
         filterRow.add(filterField, BorderLayout.CENTER);
         top.add(filterRow);
         body.add(top, BorderLayout.NORTH);
