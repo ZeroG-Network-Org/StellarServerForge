@@ -406,14 +406,8 @@ public class SettingsPanel extends JPanel {
     }
 
     private static JTextField themedField(String initial) {
-        JTextField field = new JTextField(initial, 10);
-        field.setBackground(StellarTheme.FIELD_BG);
-        field.setForeground(StellarTheme.TEXT_PRIMARY);
-        field.setCaretColor(StellarTheme.ACCENT);
-        field.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createLineBorder(StellarTheme.NEUTRAL_800),
-                BorderFactory.createEmptyBorder(6, 10, 6, 10)));
-        field.setFont(StellarTheme.FONT_BODY);
+        JTextField field = new com.zerog.stellarserverforge.gui.theme.StellarTextField(10);
+        field.setText(initial);
         return field;
     }
 }

@@ -56,3 +56,5 @@ also used as the GitHub Release notes for each CI build — see `docs/wiki/Build
   rest of the themed UI — replaced with a `−`/`+` button pair around a `StellarTextField`.
 - The Mods and ZeroG Network mods tabs' filter boxes now use `StellarTextField` too, so both
   match the wizard's rounded, accent-on-focus input styling instead of the old flat/square field.
+- Settings tab: the Port, Catalog URL, and CurseForge proxy endpoint fields now use
+  `StellarTextField` as well.
